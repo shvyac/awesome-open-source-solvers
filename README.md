@@ -64,12 +64,13 @@ Open multiphysics FEM (fluid, solid, EM, heat, and coupled problems) with GUI an
 - https://www.elmerfem.org/
 - https://github.com/ElmerCSC/elmerfem
 
-### FreeFEM / SfePy / Firedrake
+### FreeFEM / SfePy / Firedrake / scikit-fem
 PDE/FEM platforms with DSL or Python interfaces for custom physics and research.
 
 - https://freefem.org/ — https://github.com/FreeFem/FreeFem-sources
 - https://sfepy.org/ — https://github.com/sfepy/sfepy
 - https://www.firedrakeproject.org/ — https://github.com/firedrakeproject/firedrake
+- https://scikit-fem.readthedocs.io/ — https://github.com/kinnala/scikit-fem
 
 ### MOOSE / libMesh / GetDP
 Multiphysics Object-Oriented Simulation Environment (built on libMesh); GetDP for coupled FEM (often with Gmsh/ONELAB).
@@ -81,10 +82,16 @@ Multiphysics Object-Oriented Simulation Environment (built on libMesh); GetDP fo
 ### FrontISTR / MYSTRAN / FEBio / NGSolve
 Large-scale nonlinear structures (FrontISTR); Nastran-like analysis (MYSTRAN); biomechanics nonlinear FEM (FEBio); Netgen + NGSolve FEM platform.
 
-- https://www.frontistr.com/ — https://github.com/FrontISTR/FrontISTR
+- https://www.frontistr.com/ — https://gitlab.com/FrontISTR-Commons/FrontISTR (main development; GitHub is a mirror)
 - https://mystran.com/ — https://github.com/dr-bill-c/MYSTRAN
 - https://febio.org/ — https://github.com/febiosoftware/FEBio
 - https://ngsolve.org/ — https://github.com/NGSolve/ngsolve
+
+### Kratos Multiphysics
+BSD-licensed C++/Python framework for parallel multi-disciplinary simulation — structures, fluids, DEM, FSI, and optimization applications.
+
+- https://kratosmultiphysics.github.io/Kratos/
+- https://github.com/KratosMultiphysics/Kratos
 
 ---
 
@@ -116,9 +123,9 @@ MATLAB Helmholtz / acoustic BEM codes for 2D and 3D geometries.
 Finite-volume, finite-element, and lattice-Boltzmann fluid solvers.
 
 ### OpenFOAM
-Most widely used open-source CFD toolbox — incompressible/compressible flow, heat transfer, multiphase, reactions; large ecosystem.
+Most widely used open-source CFD toolbox — incompressible/compressible flow, heat transfer, multiphase, reactions; large ecosystem. Latest OpenCFD release is v2606 (June 2026); its repositories moved to gitlab.com/openfoam in Nov 2025.
 
-- https://www.openfoam.com/
+- https://www.openfoam.com/ — https://gitlab.com/openfoam
 - https://openfoam.org/
 - https://github.com/OpenFOAM/OpenFOAM-dev
 
@@ -131,14 +138,14 @@ Multiphysics PDE solver with gradient-based aerodynamic shape optimization and a
 ### Nektar++ / Lethe
 Spectral/hp element CFD (Nektar++); high-order CG CFD–DEM (Lethe).
 
-- https://www.nektar.info/ — https://github.com/Nektar/Nektar
-- https://lethe-cfd.github.io/lethe/ — https://github.com/lethe-cfd/lethe
+- https://www.nektar.info/ — https://gitlab.nektar.info/nektar/nektar
+- https://chaos-polymtl.github.io/lethe/ — https://github.com/chaos-polymtl/lethe
 
 ### Palabos / waLBerla / OpenLB
 Lattice Boltzmann Method (LBM) CFD frameworks for complex flows and HPC.
 
 - https://palabos.unige.ch/ — https://gitlab.com/unigespc/palabos
-- https://www.walberla.net/ — https://github.com/walberla/walberla
+- https://www.walberla.net/ — https://github.com/lssfau/walberla (mirror of the official FAU GitLab)
 - https://www.openlb.net/ — https://gitlab.com/openlb/release
 
 ### Fire Dynamics Simulator (FDS)
@@ -153,6 +160,12 @@ EDF industrial CFD (Code_Saturne); spectral-element CFD (Nek5000 / nekRS).
 - https://www.code-saturne.org/
 - https://nek5000.mcs.anl.gov/ — https://github.com/Nek5000/Nek5000
 - https://github.com/Nek5000/nekRS
+
+### JAX-Fluids / XLB
+GPU-accelerated, differentiable CFD in Python for physics-based ML — compressible/multiphase finite-volume (JAX-Fluids) and lattice Boltzmann on JAX / NVIDIA Warp (XLB).
+
+- https://github.com/tumaer/JAXFLUIDS
+- https://github.com/Autodesk/XLB
 
 ---
 
@@ -169,7 +182,7 @@ Multiphysics multibody platform — vehicles, robots, granular/DEM contact, FEA 
 ### MBDyn / Simbody / EXUDYN
 General-purpose MBD (MBDyn); articulated biomechanics/robotics (Simbody); Python/C++ flexible multibody (EXUDYN).
 
-- https://www.mbdyn.org/ — https://github.com/mbdyn/mbdyn
+- https://www.mbdyn.org/ — https://public.gitlab.polimi.it/DAER/mbdyn
 - https://github.com/simbody/simbody
 - https://github.com/jgerstmayr/EXUDYN
 
@@ -181,7 +194,7 @@ Musculoskeletal dynamics (OpenSim); fast rigid-body dynamics for robotics (Pinoc
 - https://drake.mit.edu/ — https://github.com/RobotLocomotion/drake
 
 ### OpenFAST
-NREL aero-servo-elastic wind turbine dynamics (coupled CFD/structural loads workflows).
+NLR (formerly NREL) aero-servo-elastic wind turbine dynamics (coupled CFD/structural loads workflows).
 
 - https://openfast.readthedocs.io/
 - https://github.com/OpenFAST/openfast
@@ -208,20 +221,20 @@ High-performance molecular dynamics for biomolecules and soft matter; strong GPU
 SPH free-surface / coastal / industrial flows (DualSPHysics); engineering SPH (SPHERA); Python SPH framework (PySPH).
 
 - https://dual.sphysics.org/ — https://github.com/DualSPHysics/DualSPHysics
-- https://github.com/AndreaAmicarelli/SPHERA
+- https://github.com/GiordanoAgateRSE/SPHERA
 - https://pysph.readthedocs.io/ — https://github.com/pypr/pysph
 
 ### LIGGGHTS / Yade / MercuryDPM
 DEM for granular materials and industrial particle processes.
 
-- https://www.cfdem.com/liggghtsolf — https://github.com/CFDEMproject/LIGGGHTS-PUBLIC
+- https://www.cfdem.com/liggghtsr-open-source-discrete-element-method-particle-simulation-code — https://github.com/CFDEMproject/LIGGGHTS-PUBLIC (commercial successor: Aspherix)
 - https://yade-dem.org/ — https://gitlab.com/yade-dev/trunk
 - https://www.mercurydpm.org/ — https://github.com/MercuryDPM/MercuryDPM
 
 ### WarpX / PIConGPU / Smilei
 Exascale electromagnetic PIC (WarpX); GPU PIC (PIConGPU); plasma PIC (Smilei).
 
-- https://warpx.readthedocs.io/ — https://github.com/ECP-WarpX/WarpX
+- https://warpx.readthedocs.io/ — https://github.com/BLAST-WarpX/warpx
 - https://picongpu.readthedocs.io/ — https://github.com/ComputationalRadiationPhysics/picongpu
 - https://smileipic.github.io/Smilei/ — https://github.com/SmileiPIC/Smilei
 
@@ -252,10 +265,11 @@ Exterior and interior Helmholtz / EM–acoustic boundary-element solvers (see BE
 - http://homerreid.github.io/scuff-em-documentation/
 
 ### k-Wave
-MATLAB/C++ toolbox for time-domain acoustic and ultrasound wavefields.
+MATLAB/C++ toolbox for time-domain acoustic and ultrasound wavefields. v1.4.x is the last full k-Wave-I release; a community rewrite (k-Wave-II) is planned. Python interface via k-wave-python.
 
 - http://www.k-wave.org/
 - https://github.com/ucl-bug/k-wave
+- https://github.com/waltsims/k-wave-python
 
 ### GetDP / ONELAB acoustics
 Coupled FEM acoustics and multiphysics via GetDP + Gmsh/ONELAB workflows.
@@ -288,10 +302,10 @@ Fire-driven reacting buoyancy flows (see also CFD).
 - https://github.com/firemodels/fds
 
 ### PeleC / PeleLMeX / PelePhysics
-AMReX-based compressible and low-Mach reacting flow solvers (DOE Exascale combustion stack).
+AMReX-based compressible and low-Mach reacting flow solvers (DOE Exascale combustion stack, now published as the Pele Suite).
 
-- https://amrex-combustion.github.io/
-- https://github.com/AMReX-Combustion
+- https://pele-suite.github.io/
+- https://github.com/Pele-Suite
 
 ### CoolProp
 Open-source thermodynamic and transport properties (useful adjunct for reacting-flow workflows).
@@ -317,7 +331,7 @@ Plane-wave and localized-orbital DFT codes for solids, chemistry, and nanosystem
 - https://www.abinit.org/ — https://github.com/abinit/abinit
 - https://www.cp2k.org/ — https://github.com/cp2k/cp2k
 - https://gitlab.com/siesta-project/siesta
-- https://wiki.fysik.dtu.dk/gpaw/ — https://gitlab.com/gpaw/gpaw
+- https://gpaw.readthedocs.io/ — https://gitlab.com/gpaw/gpaw
 
 ### QuTiP
 Quantum Toolbox in Python — open quantum systems, master equations, and quantum optics dynamics.
@@ -374,14 +388,20 @@ Sparse direct solvers — SuperLU / SuperLU_DIST; MUMPS multifrontal; SuiteSpars
 ### Eigen / OpenBLAS
 Dense linear algebra building blocks used inside many solvers.
 
-- https://eigen.tuxfamily.org/ — https://gitlab.com/libeigen/eigen
-- https://www.openblas.net/ — https://github.com/OpenMathLib/OpenBLAS
+- https://libeigen.gitlab.io/ — https://gitlab.com/libeigen/eigen
+- https://openmathlib.org/OpenBLAS/ — https://github.com/OpenMathLib/OpenBLAS
 
 ### Dakota
 Sandia toolkit for optimization, UQ, and model calibration wrapped around simulation codes.
 
 - https://dakota.sandia.gov/
 - https://github.com/snl-dakota/dakota
+
+### preCICE
+Coupling library for partitioned multiphysics (FSI, conjugate heat transfer) with ready adapters for OpenFOAM, CalculiX, Code_Aster, deal.II, FEniCS, SU2, and more.
+
+- https://precice.org/
+- https://github.com/precice/precice
 
 ---
 

@@ -64,12 +64,13 @@ EDF の産業向け構造力学／マルチフィジックス FEM スイート�
 - https://www.elmerfem.org/
 - https://github.com/ElmerCSC/elmerfem
 
-### FreeFEM / SfePy / Firedrake
+### FreeFEM / SfePy / Firedrake / scikit-fem
 カスタム物理や研究向けに、DSL または Python インタフェースを持つ PDE/FEM プラットフォーム。
 
 - https://freefem.org/ — https://github.com/FreeFem/FreeFem-sources
 - https://sfepy.org/ — https://github.com/sfepy/sfepy
 - https://www.firedrakeproject.org/ — https://github.com/firedrakeproject/firedrake
+- https://scikit-fem.readthedocs.io/ — https://github.com/kinnala/scikit-fem
 
 ### MOOSE / libMesh / GetDP
 libMesh 上のマルチフィジックス環境（MOOSE）。GetDP は連成 FEM（しばしば Gmsh/ONELAB と併用）。
@@ -81,10 +82,16 @@ libMesh 上のマルチフィジックス環境（MOOSE）。GetDP は連成 FEM
 ### FrontISTR / MYSTRAN / FEBio / NGSolve
 大規模非線形構造（FrontISTR）；Nastran 風解析（MYSTRAN）；生体力学の非線形 FEM（FEBio）；Netgen + NGSolve FEM プラットフォーム。
 
-- https://www.frontistr.com/ — https://github.com/FrontISTR/FrontISTR
+- https://www.frontistr.com/ — https://gitlab.com/FrontISTR-Commons/FrontISTR （主開発。GitHub はミラー）
 - https://mystran.com/ — https://github.com/dr-bill-c/MYSTRAN
 - https://febio.org/ — https://github.com/febiosoftware/FEBio
 - https://ngsolve.org/ — https://github.com/NGSolve/ngsolve
+
+### Kratos Multiphysics
+並列マルチディシプリン・シミュレーション向けの BSD ライセンス C++/Python フレームワーク — 構造・流体・DEM・FSI・最適化アプリケーション。
+
+- https://kratosmultiphysics.github.io/Kratos/
+- https://github.com/KratosMultiphysics/Kratos
 
 ---
 
@@ -116,9 +123,9 @@ libMesh 上のマルチフィジックス環境（MOOSE）。GetDP は連成 FEM
 有限体積・有限要素・格子ボルツマンによる流体ソルバ。
 
 ### OpenFOAM
-最も広く使われるオープンソース CFD ツールボックス — 非圧縮／圧縮流れ、伝熱、多相、反応。大きな生態系。
+最も広く使われるオープンソース CFD ツールボックス — 非圧縮／圧縮流れ、伝熱、多相、反応。大きな生態系。OpenCFD 版の最新は v2606（2026年6月）。同版のリポジトリは 2025年11月に gitlab.com/openfoam へ移転。
 
-- https://www.openfoam.com/
+- https://www.openfoam.com/ — https://gitlab.com/openfoam
 - https://openfoam.org/
 - https://github.com/OpenFOAM/OpenFOAM-dev
 
@@ -131,14 +138,14 @@ libMesh 上のマルチフィジックス環境（MOOSE）。GetDP は連成 FEM
 ### Nektar++ / Lethe
 スペクトル／hp 要素 CFD（Nektar++）；高次 CG CFD–DEM（Lethe）。
 
-- https://www.nektar.info/ — https://github.com/Nektar/Nektar
-- https://lethe-cfd.github.io/lethe/ — https://github.com/lethe-cfd/lethe
+- https://www.nektar.info/ — https://gitlab.nektar.info/nektar/nektar
+- https://chaos-polymtl.github.io/lethe/ — https://github.com/chaos-polymtl/lethe
 
 ### Palabos / waLBerla / OpenLB
 複雑流れと HPC 向けの格子ボルツマン法（LBM）CFD フレームワーク。
 
 - https://palabos.unige.ch/ — https://gitlab.com/unigespc/palabos
-- https://www.walberla.net/ — https://github.com/walberla/walberla
+- https://www.walberla.net/ — https://github.com/lssfau/walberla （公式 FAU GitLab のミラー）
 - https://www.openlb.net/ — https://gitlab.com/openlb/release
 
 ### Fire Dynamics Simulator (FDS)
@@ -153,6 +160,12 @@ EDF 産業向け CFD（Code_Saturne）；スペクトル要素 CFD（Nek5000 / n
 - https://www.code-saturne.org/
 - https://nek5000.mcs.anl.gov/ — https://github.com/Nek5000/Nek5000
 - https://github.com/Nek5000/nekRS
+
+### JAX-Fluids / XLB
+物理ベース ML 向けの GPU 加速・微分可能な Python CFD — 圧縮性／多相の有限体積法（JAX-Fluids）、JAX / NVIDIA Warp 上の格子ボルツマン法（XLB）。
+
+- https://github.com/tumaer/JAXFLUIDS
+- https://github.com/Autodesk/XLB
 
 ---
 
@@ -169,7 +182,7 @@ EDF 産業向け CFD（Code_Saturne）；スペクトル要素 CFD（Nek5000 / n
 ### MBDyn / Simbody / EXUDYN
 汎用 MBD（MBDyn）；関節付き生体力学／ロボティクス（Simbody）；Python/C++ 柔軟マルチボディ（EXUDYN）。
 
-- https://www.mbdyn.org/ — https://github.com/mbdyn/mbdyn
+- https://www.mbdyn.org/ — https://public.gitlab.polimi.it/DAER/mbdyn
 - https://github.com/simbody/simbody
 - https://github.com/jgerstmayr/EXUDYN
 
@@ -181,7 +194,7 @@ EDF 産業向け CFD（Code_Saturne）；スペクトル要素 CFD（Nek5000 / n
 - https://drake.mit.edu/ — https://github.com/RobotLocomotion/drake
 
 ### OpenFAST
-NREL の空力・サーボ・弾性風力タービンダイナミクス（CFD／構造荷重連成ワークフロー）。
+NLR（旧 NREL）の空力・サーボ・弾性風力タービンダイナミクス（CFD／構造荷重連成ワークフロー）。
 
 - https://openfast.readthedocs.io/
 - https://github.com/OpenFAST/openfast
@@ -208,20 +221,20 @@ NREL の空力・サーボ・弾性風力タービンダイナミクス（CFD／
 自由表面／沿岸／産業流れの SPH（DualSPHysics）；工学 SPH（SPHERA）；Python SPH フレームワーク（PySPH）。
 
 - https://dual.sphysics.org/ — https://github.com/DualSPHysics/DualSPHysics
-- https://github.com/AndreaAmicarelli/SPHERA
+- https://github.com/GiordanoAgateRSE/SPHERA
 - https://pysph.readthedocs.io/ — https://github.com/pypr/pysph
 
 ### LIGGGHTS / Yade / MercuryDPM
 粉粒体・産業粒子プロセス向け DEM。
 
-- https://www.cfdem.com/liggghtsolf — https://github.com/CFDEMproject/LIGGGHTS-PUBLIC
+- https://www.cfdem.com/liggghtsr-open-source-discrete-element-method-particle-simulation-code — https://github.com/CFDEMproject/LIGGGHTS-PUBLIC （商用後継は Aspherix）
 - https://yade-dem.org/ — https://gitlab.com/yade-dev/trunk
 - https://www.mercurydpm.org/ — https://github.com/MercuryDPM/MercuryDPM
 
 ### WarpX / PIConGPU / Smilei
 エクサスケール電磁 PIC（WarpX）；GPU PIC（PIConGPU）；プラズマ PIC（Smilei）。
 
-- https://warpx.readthedocs.io/ — https://github.com/ECP-WarpX/WarpX
+- https://warpx.readthedocs.io/ — https://github.com/BLAST-WarpX/warpx
 - https://picongpu.readthedocs.io/ — https://github.com/ComputationalRadiationPhysics/picongpu
 - https://smileipic.github.io/Smilei/ — https://github.com/SmileiPIC/Smilei
 
@@ -252,10 +265,11 @@ NREL の空力・サーボ・弾性風力タービンダイナミクス（CFD／
 - http://homerreid.github.io/scuff-em-documentation/
 
 ### k-Wave
-時間領域の音響／超音波波動場向け MATLAB/C++ ツールボックス。
+時間領域の音響／超音波波動場向け MATLAB/C++ ツールボックス。v1.4.x が k-Wave-I の最終版となり、コミュニティによる k-Wave-II へ移行予定。Python インタフェース（k-wave-python）あり。
 
 - http://www.k-wave.org/
 - https://github.com/ucl-bug/k-wave
+- https://github.com/waltsims/k-wave-python
 
 ### GetDP / ONELAB 音響
 GetDP + Gmsh/ONELAB ワークフローによる連成 FEM 音響とマルチフィジックス。
@@ -288,10 +302,10 @@ OpenFOAM ツールボックス上の reacting／chemistry／combustion パッケ
 - https://github.com/firemodels/fds
 
 ### PeleC / PeleLMeX / PelePhysics
-AMReX ベースの圧縮性／低マッハ反応流れソルバ（DOE エクサスケール燃焼スタック）。
+AMReX ベースの圧縮性／低マッハ反応流れソルバ（DOE エクサスケール燃焼スタック。現在は Pele Suite として公開）。
 
-- https://amrex-combustion.github.io/
-- https://github.com/AMReX-Combustion
+- https://pele-suite.github.io/
+- https://github.com/Pele-Suite
 
 ### CoolProp
 オープンソースの熱力学・輸送物性（反応流れワークフローの補助として有用）。
@@ -317,7 +331,7 @@ DFT、多体電子構造、開放量子系。
 - https://www.abinit.org/ — https://github.com/abinit/abinit
 - https://www.cp2k.org/ — https://github.com/cp2k/cp2k
 - https://gitlab.com/siesta-project/siesta
-- https://wiki.fysik.dtu.dk/gpaw/ — https://gitlab.com/gpaw/gpaw
+- https://gpaw.readthedocs.io/ — https://gitlab.com/gpaw/gpaw
 
 ### QuTiP
 Python の量子ツールボックス — 開放量子系、マスター方程式、量子光学ダイナミクス。
@@ -374,14 +388,20 @@ HPC 線形代数・ソルバ・離散化・マルチフィジックス向けパ�
 ### Eigen / OpenBLAS
 多くのソルバ内部で使われる密行列線形代数の部品。
 
-- https://eigen.tuxfamily.org/ — https://gitlab.com/libeigen/eigen
-- https://www.openblas.net/ — https://github.com/OpenMathLib/OpenBLAS
+- https://libeigen.gitlab.io/ — https://gitlab.com/libeigen/eigen
+- https://openmathlib.org/OpenBLAS/ — https://github.com/OpenMathLib/OpenBLAS
 
 ### Dakota
 シミュレーションコードを包む Sandia の最適化・UQ・モデル校正ツールキット。
 
 - https://dakota.sandia.gov/
 - https://github.com/snl-dakota/dakota
+
+### preCICE
+分離型マルチフィジックス（FSI、共役熱伝達）向け連成ライブラリ。OpenFOAM、CalculiX、Code_Aster、deal.II、FEniCS、SU2 などのアダプタあり。
+
+- https://precice.org/
+- https://github.com/precice/precice
 
 ---
 
