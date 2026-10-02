@@ -4,7 +4,7 @@
 
 [日本語版はこちら / Japanese](README.ja.md)
 
-Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CFD, multibody/dynamics, particle methods, acoustics, combustion, weather/climate, quantum — plus linear algebra and mesh adjuncts. Prefer well-known, durable projects with official docs or GitHub homes. Overlap with CAD/CAE lists is fine; this list focuses on **solvers**, not CAD apps.
+Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CFD, multibody/dynamics, particle methods, acoustics, electronic circuits/EM, combustion, weather/climate, quantum — plus linear algebra and mesh adjuncts. Prefer well-known, durable projects with official docs or GitHub homes. Overlap with CAD/CAE lists is fine; this list focuses on **solvers**, not CAD apps.
 
 ## Contents
 
@@ -14,6 +14,7 @@ Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CF
 - [Multibody / structural dynamics](#multibody--structural-dynamics)
 - [Particle methods (MD / DEM / SPH / PIC)](#particle-methods-md--dem--sph--pic)
 - [Acoustics / vibroacoustics](#acoustics--vibroacoustics)
+- [Electronic circuits / electromagnetics](#electronic-circuits--electromagnetics)
 - [Combustion / reacting flows](#combustion--reacting-flows)
 - [Weather / climate](#weather--climate)
 - [Quantum / electronic structure / quantum dynamics](#quantum--electronic-structure--quantum-dynamics)
@@ -277,6 +278,39 @@ Coupled FEM acoustics and multiphysics via GetDP + Gmsh/ONELAB workflows.
 
 - https://getdp.info/
 - https://onelab.info/
+
+---
+
+## Electronic circuits / electromagnetics
+
+Circuit (SPICE) simulators and electromagnetic field solvers. See also Elmer / GetDP (FEM electromagnetics) and scuff-em (BEM). Freeware but closed-source tools such as LTspice and QSPICE are out of scope.
+
+### ngspice
+Open-source mixed-signal SPICE simulator (successor of Berkeley SPICE3f5); built into KiCad and used as a backend by Qucs-S and PySpice.
+
+- https://ngspice.sourceforge.io/ — https://sourceforge.net/p/ngspice/ngspice/
+
+### Xyce
+Sandia's massively parallel, SPICE-compatible circuit simulator for large analog circuits (GPL v3).
+
+- https://xyce.sandia.gov/ — https://github.com/Xyce/Xyce
+
+### Qucs-S / PySpice
+GUI schematic capture and simulation front end driving ngspice, Xyce, or QucsatorRF (Qucs-S); Python interface to ngspice / Xyce for scripted circuit analysis (PySpice; docs site not updated since 2021).
+
+- https://ra3xdh.github.io/ — https://github.com/ra3xdh/qucs_s
+- https://pyspice.fabrice-salvaire.fr/ — https://github.com/PySpice-org/PySpice
+
+### openEMS / Meep
+FDTD electromagnetic field solvers — antennas and PCB/RF structures with MATLAB/Octave/Python interfaces (openEMS); nanophotonics and general EM with Python scripting (Meep, MIT).
+
+- https://www.openems.de/ — https://github.com/thliebig/openEMS-Project
+- https://meep.readthedocs.io/ — https://github.com/NanoComp/meep
+
+### Palace
+AWS 3D finite-element solver for computational electromagnetics (eigenmodes, frequency/time domain, electrostatics, magnetostatics), used e.g. for superconducting quantum circuits; built on MFEM.
+
+- https://awslabs.github.io/palace/stable/ — https://github.com/awslabs/palace
 
 ---
 

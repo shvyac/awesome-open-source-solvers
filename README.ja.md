@@ -4,7 +4,7 @@
 
 [English README](README.md)
 
-オープンソースの**ソルバ**と科学計算スタックのキュレーション — FEM、BEM、CFD、マルチボディ／ダイナミクス、粒子法、音響、燃焼、気象／気候、量子、および線形代数・メッシュ補助。公式ドキュメントや GitHub のある耐久性の高いプロジェクトを優先。CAD/CAE リストとの重複は可。本リストは CAD アプリではなく**ソルバ**に焦点を当てる。
+オープンソースの**ソルバ**と科学計算スタックのキュレーション — FEM、BEM、CFD、マルチボディ／ダイナミクス、粒子法、音響、電子回路／電磁界、燃焼、気象／気候、量子、および線形代数・メッシュ補助。公式ドキュメントや GitHub のある耐久性の高いプロジェクトを優先。CAD/CAE リストとの重複は可。本リストは CAD アプリではなく**ソルバ**に焦点を当てる。
 
 ## 目次
 
@@ -14,6 +14,7 @@
 - [マルチボディ／構造ダイナミクス](#マルチボディ構造ダイナミクス)
 - [粒子法（MD / DEM / SPH / PIC）](#粒子法md--dem--sph--pic)
 - [音響／構造音響](#音響構造音響)
+- [電子回路／電磁界](#電子回路電磁界)
 - [燃焼／反応流れ](#燃焼反応流れ)
 - [気象／気候](#気象気候)
 - [量子／電子構造／量子ダイナミクス](#量子電子構造量子ダイナミクス)
@@ -277,6 +278,39 @@ GetDP + Gmsh/ONELAB ワークフローによる連成 FEM 音響とマルチフ�
 
 - https://getdp.info/
 - https://onelab.info/
+
+---
+
+## 電子回路／電磁界
+
+回路（SPICE）シミュレータと電磁界ソルバ。Elmer / GetDP（FEM 電磁界）や scuff-em（BEM）も参照。LTspice や QSPICE のように無料でもソース非公開のツールは対象外。
+
+### ngspice
+オープンソースのミックスドシグナル SPICE シミュレータ（Berkeley SPICE3f5 の後継）。KiCad に組み込まれ、Qucs-S や PySpice のバックエンドとしても使われる。
+
+- https://ngspice.sourceforge.io/ — https://sourceforge.net/p/ngspice/ngspice/
+
+### Xyce
+Sandia による大規模並列・SPICE 互換の回路シミュレータ。大規模アナログ回路向け（GPL v3）。
+
+- https://xyce.sandia.gov/ — https://github.com/Xyce/Xyce
+
+### Qucs-S / PySpice
+ngspice・Xyce・QucsatorRF を駆動する回路図入力＋シミュレーションの GUI フロントエンド（Qucs-S）；ngspice / Xyce を Python から操作してスクリプトで回路解析（PySpice。ドキュメントサイトは 2021 年以降更新なし）。
+
+- https://ra3xdh.github.io/ — https://github.com/ra3xdh/qucs_s
+- https://pyspice.fabrice-salvaire.fr/ — https://github.com/PySpice-org/PySpice
+
+### openEMS / Meep
+FDTD 法による電磁界ソルバ — MATLAB/Octave/Python インタフェースでアンテナや基板・高周波構造を解析（openEMS）；Python スクリプトによるナノフォトニクス・汎用電磁界解析（Meep、MIT）。
+
+- https://www.openems.de/ — https://github.com/thliebig/openEMS-Project
+- https://meep.readthedocs.io/ — https://github.com/NanoComp/meep
+
+### Palace
+AWS による計算電磁気学向け 3D 有限要素ソルバ（固有モード、周波数／時間領域、静電界、静磁界）。超伝導量子回路などに利用。MFEM ベース。
+
+- https://awslabs.github.io/palace/stable/ — https://github.com/awslabs/palace
 
 ---
 
