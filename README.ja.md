@@ -4,7 +4,7 @@
 
 [English README](README.md)
 
-オープンソースの**ソルバ**と科学計算スタックのキュレーション — FEM、BEM、CFD、マルチボディ／ダイナミクス、粒子法、音響、燃焼、量子、および線形代数・メッシュ補助。公式ドキュメントや GitHub のある耐久性の高いプロジェクトを優先。CAD/CAE リストとの重複は可。本リストは CAD アプリではなく**ソルバ**に焦点を当てる。
+オープンソースの**ソルバ**と科学計算スタックのキュレーション — FEM、BEM、CFD、マルチボディ／ダイナミクス、粒子法、音響、燃焼、気象／気候、量子、および線形代数・メッシュ補助。公式ドキュメントや GitHub のある耐久性の高いプロジェクトを優先。CAD/CAE リストとの重複は可。本リストは CAD アプリではなく**ソルバ**に焦点を当てる。
 
 ## 目次
 
@@ -15,6 +15,7 @@
 - [粒子法（MD / DEM / SPH / PIC）](#粒子法md--dem--sph--pic)
 - [音響／構造音響](#音響構造音響)
 - [燃焼／反応流れ](#燃焼反応流れ)
+- [気象／気候](#気象気候)
 - [量子／電子構造／量子ダイナミクス](#量子電子構造量子ダイナミクス)
 - [線形代数と並列ソルバ](#線形代数と並列ソルバ)
 - [メッシュ／プリポスト（簡潔）](#メッシュプリポスト簡潔)
@@ -312,6 +313,55 @@ AMReX ベースの圧縮性／低マッハ反応流れソルバ（DOE エクサ�
 
 - https://coolprop.org/
 - https://github.com/CoolProp/CoolProp
+
+---
+
+## 気象／気候
+
+数値天気予報（NWP）、地球システム／気候モデル、機械学習による気象予測。学習済み重みのライセンスはモデルごとに異なるため、利用前に確認すること。
+
+### WRF / MPAS
+世界で最も広く使われるオープンな領域数値予報モデル（WRF、NCAR）；非構造ボロノイメッシュによる全球〜領域モデル（MPAS-Atmosphere、NCAR / LANL）。
+
+- https://www.mmm.ucar.edu/models/wrf — https://github.com/wrf-model/WRF
+- https://mpas-dev.github.io/ — https://github.com/MPAS-Dev/MPAS-Model
+
+### UFS Weather Model
+FV3 力学コアに基づく NOAA の統合予報システム — 現業の GFS を支えるコミュニティモデル。
+
+- https://ufs.epic.noaa.gov/
+- https://github.com/ufs-community/ufs-weather-model
+
+### ICON
+DWD / MPI-M の正二十面体格子・非静力学の気象・気候モデル。2024年から BSD-3-Clause でオープンソース化。
+
+- https://www.icon-model.org/
+- https://gitlab.dkrz.de/icon/icon-model
+
+### CESM / E3SM
+大気・海洋・陸面・海氷を結合した気候シミュレーション向け地球システムモデル（CESM は NCAR、E3SM は米国 DOE）。
+
+- https://www.cesm.ucar.edu/ — https://github.com/ESCOMP/CESM
+- https://e3sm.org/ — https://github.com/E3SM-Project/E3SM
+
+### Anemoi / AIFS
+ML 気象モデルの学習・実行のための ECMWF のフレームワーク（データセット、グラフ、モデル、学習、推論）。ECMWF の現業 AI 予報 AIFS はこれで構築（重みは CC BY 4.0）。
+
+- https://anemoi.readthedocs.io/ — https://github.com/ecmwf/anemoi-core
+- https://huggingface.co/ecmwf/aifs-single-1.1
+
+### GraphCast / GenCast / NeuralGCM
+Google DeepMind の ML 中期予報 — 決定論的な GraphCast とアンサンブルの GenCast（リポジトリは graphcast から weathernext に改名）；微分可能な力学コアと ML を組み合わせたハイブリッド大気モデル NeuralGCM。
+
+- https://github.com/google-deepmind/weathernext
+- https://neuralgcm.readthedocs.io/ — https://github.com/neuralgcm/neuralgcm
+
+### Earth2Studio / Aurora / Pangu-Weather
+AI 気象・気候モデル（FourCastNet など）を実行する NVIDIA のフレームワーク；Microsoft の地球システム基盤モデル Aurora；Huawei の 3D Transformer 予報モデル Pangu-Weather。
+
+- https://nvidia.github.io/earth2studio/ — https://github.com/NVIDIA/earth2studio
+- https://microsoft.github.io/aurora/ — https://github.com/microsoft/aurora
+- https://github.com/198808xc/Pangu-Weather
 
 ---
 

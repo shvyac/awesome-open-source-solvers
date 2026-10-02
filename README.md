@@ -4,7 +4,7 @@
 
 [日本語版はこちら / Japanese](README.ja.md)
 
-Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CFD, multibody/dynamics, particle methods, acoustics, combustion, quantum — plus linear algebra and mesh adjuncts. Prefer well-known, durable projects with official docs or GitHub homes. Overlap with CAD/CAE lists is fine; this list focuses on **solvers**, not CAD apps.
+Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CFD, multibody/dynamics, particle methods, acoustics, combustion, weather/climate, quantum — plus linear algebra and mesh adjuncts. Prefer well-known, durable projects with official docs or GitHub homes. Overlap with CAD/CAE lists is fine; this list focuses on **solvers**, not CAD apps.
 
 ## Contents
 
@@ -15,6 +15,7 @@ Curated open-source **solvers** and scientific-computing stacks — FEM, BEM, CF
 - [Particle methods (MD / DEM / SPH / PIC)](#particle-methods-md--dem--sph--pic)
 - [Acoustics / vibroacoustics](#acoustics--vibroacoustics)
 - [Combustion / reacting flows](#combustion--reacting-flows)
+- [Weather / climate](#weather--climate)
 - [Quantum / electronic structure / quantum dynamics](#quantum--electronic-structure--quantum-dynamics)
 - [Linear algebra & parallel solvers](#linear-algebra--parallel-solvers)
 - [Mesh / pre-post (brief)](#mesh--pre-post-brief)
@@ -312,6 +313,55 @@ Open-source thermodynamic and transport properties (useful adjunct for reacting-
 
 - https://coolprop.org/
 - https://github.com/CoolProp/CoolProp
+
+---
+
+## Weather / climate
+
+Numerical weather prediction (NWP), Earth-system / climate models, and machine-learning weather forecasting. Check each model's license for trained weights before use.
+
+### WRF / MPAS
+Weather Research and Forecasting model — the most widely used open limited-area NWP model (NCAR); MPAS-Atmosphere, unstructured Voronoi-mesh global-to-regional model (NCAR / LANL).
+
+- https://www.mmm.ucar.edu/models/wrf — https://github.com/wrf-model/WRF
+- https://mpas-dev.github.io/ — https://github.com/MPAS-Dev/MPAS-Model
+
+### UFS Weather Model
+NOAA Unified Forecast System built on the FV3 dynamical core — the community model behind the operational GFS.
+
+- https://ufs.epic.noaa.gov/
+- https://github.com/ufs-community/ufs-weather-model
+
+### ICON
+Icosahedral nonhydrostatic weather and climate model of DWD / MPI-M; open source under BSD-3-Clause since 2024.
+
+- https://www.icon-model.org/
+- https://gitlab.dkrz.de/icon/icon-model
+
+### CESM / E3SM
+Coupled Earth-system models for climate simulation — atmosphere, ocean, land, sea ice (CESM by NCAR; E3SM by US DOE).
+
+- https://www.cesm.ucar.edu/ — https://github.com/ESCOMP/CESM
+- https://e3sm.org/ — https://github.com/E3SM-Project/E3SM
+
+### Anemoi / AIFS
+ECMWF framework for training and running ML weather models (datasets, graphs, models, training, inference); ECMWF's operational AI forecast AIFS is built on it (weights CC BY 4.0).
+
+- https://anemoi.readthedocs.io/ — https://github.com/ecmwf/anemoi-core
+- https://huggingface.co/ecmwf/aifs-single-1.1
+
+### GraphCast / GenCast / NeuralGCM
+Google DeepMind ML medium-range forecasting — deterministic GraphCast and ensemble GenCast (repo renamed from graphcast to weathernext); NeuralGCM, a hybrid differentiable dynamical core + ML atmosphere model.
+
+- https://github.com/google-deepmind/weathernext
+- https://neuralgcm.readthedocs.io/ — https://github.com/neuralgcm/neuralgcm
+
+### Earth2Studio / Aurora / Pangu-Weather
+NVIDIA framework for running AI weather/climate models (FourCastNet and others); Microsoft Aurora Earth-system foundation model; Huawei Pangu-Weather 3D transformer forecaster.
+
+- https://nvidia.github.io/earth2studio/ — https://github.com/NVIDIA/earth2studio
+- https://microsoft.github.io/aurora/ — https://github.com/microsoft/aurora
+- https://github.com/198808xc/Pangu-Weather
 
 ---
 
