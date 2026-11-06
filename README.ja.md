@@ -46,7 +46,7 @@
 FEniCSx/DOLFINx と PETSc を基盤とする、構造力学・熱伝導解析向けの Python 有限要素ワークフロー。研究者、スクリプト、AI エージェントが共通のモデル・結果インタフェースを利用でき、再現可能な例題とパラメータ解析を備える。
 
 - https://haoming-luo.github.io/agentfem/
-- https://github.com/haoming-luo/agentfem ![GitHub stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat&label=%E2%AD%90)
+- https://github.com/haoming-luo/agentfem ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F27-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/haoming-luo/agentfem?style=flat)
 
 ### MFEM
 高次手法・GPU/HPC・研究向け離散化（Galerkin、DG、混合、DPG）のための軽量でスケーラブルな C++ FEM ツールボックス。
