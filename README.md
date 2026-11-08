@@ -48,6 +48,12 @@ Python finite-element workflows for structural mechanics and heat transfer, buil
 - https://haoming-luo.github.io/agentfem/
 - https://github.com/haoming-luo/agentfem ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F27-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/haoming-luo/agentfem?style=flat)
 
+### QF Solver
+Open-source Python FEM solver for structural mechanics, featuring static and dynamic analysis, modal methods, and selected nonlinear formulations. Includes numerical verification resources and scientific documentation.
+
+- https://qfsolver.org/
+- https://github.com/emptiesvoid-cloud/QF_solver ![GitHub stars](https://img.shields.io/github/stars/emptiesvoid-cloud/QF_solver?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/emptiesvoid-cloud/QF_solver?style=flat)
+
 ### MFEM
 Lightweight, scalable C++ FEM toolbox for high-order methods, GPU/HPC, and research discretizations (Galerkin, DG, mixed, DPG).
 
