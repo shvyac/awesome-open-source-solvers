@@ -238,6 +238,23 @@ NVIDIA Warp 上に構築された、ロボティクス・シミュレーショ�
 - https://newton-physics.github.io/newton/stable/
 - https://github.com/newton-physics/newton ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/newton-physics/newton?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F14-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/newton-physics/newton?style=flat)
 
+### Siconos
+非平滑力学系 — 剛体マルチボディの片側接触・衝突・クーロン摩擦（C++ / Python）。すき間付きスライダ・クランクのチュートリアルがあり、ピストンスラップや関節すき間の検討に使える。
+
+- https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/
+- https://github.com/siconos/siconos ![GitHub stars](https://img.shields.io/github/stars/siconos/siconos?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F03%2F11-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/siconos/siconos?style=flat)
+
+### Open Dynamics Engine (ODE)
+歴史の長い剛体ダイナミクスライブラリ（C/C++、LGPL-2.1 以降または BSD）。ヒンジ／スライダ／ボールジョイント、衝突検出、摩擦に対応。
+
+- https://www.ode.org/ — https://bitbucket.org/odedevs/ode/
+
+### OpenMBD
+生体力学の研究・教育向け Python マルチボディダイナミクスシミュレータ — 剛体・ジョイント・ペナルティ法接触・3D ビューア（GPL-3.0）。
+
+- https://gtbiomech.github.io/OpenMBD/
+- https://github.com/gtbiomech/OpenMBD ![GitHub stars](https://img.shields.io/github/stars/gtbiomech/OpenMBD?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F26-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/gtbiomech/OpenMBD?style=flat)
+
 ### OpenFAST
 NLR（旧 NREL）の空力・サーボ・弾性風力タービンダイナミクス（CFD／構造荷重連成ワークフロー）。
 
