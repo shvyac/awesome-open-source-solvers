@@ -48,6 +48,12 @@ FEniCSx/DOLFINx と PETSc を基盤とする、構造力学・熱伝導解析向
 - https://haoming-luo.github.io/agentfem/
 - https://github.com/haoming-luo/agentfem ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F27-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/haoming-luo/agentfem?style=flat)
 
+### QF Solver
+構造力学向けのオープンソース Python FEM ソルバ。静的・動的解析、モーダル法、一部の非線形定式化に対応し、数値検証資料と技術ドキュメントを備える（Apache-2.0、ドキュメントは主にフランス語）。
+
+- https://qfsolver.org/
+- https://github.com/emptiesvoid-cloud/QF_solver ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/emptiesvoid-cloud/QF_solver?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/emptiesvoid-cloud/QF_solver?style=flat)
+
 ### MFEM
 高次手法・GPU/HPC・研究向け離散化（Galerkin、DG、混合、DPG）のための軽量でスケーラブルな C++ FEM ツールボックス。
 
