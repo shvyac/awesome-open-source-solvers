@@ -232,6 +232,23 @@ GPU-accelerated, differentiable physics engine built on NVIDIA Warp for robotics
 - https://newton-physics.github.io/newton/stable/
 - https://github.com/newton-physics/newton ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/newton-physics/newton?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F14-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/newton-physics/newton?style=flat)
 
+### Siconos
+Non-smooth dynamical systems — unilateral contact, impacts and Coulomb friction for rigid multibody systems (C++ / Python); includes a slider-crank with clearance tutorial, useful for piston-slap / joint-clearance studies.
+
+- https://nonsmooth.gricad-pages.univ-grenoble-alpes.fr/siconos/
+- https://github.com/siconos/siconos ![GitHub stars](https://img.shields.io/github/stars/siconos/siconos?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F03%2F11-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/siconos/siconos?style=flat)
+
+### Open Dynamics Engine (ODE)
+Long-standing rigid-body dynamics library (C/C++, LGPL-2.1+ or BSD) with hinge/slider/ball joints, collision detection and friction.
+
+- https://www.ode.org/ — https://bitbucket.org/odedevs/ode/
+
+### OpenMBD
+Python multibody dynamics simulator for biomechanics research and education — rigid bodies, joints, penalty-based contact, 3D viewer (GPL-3.0).
+
+- https://gtbiomech.github.io/OpenMBD/
+- https://github.com/gtbiomech/OpenMBD ![GitHub stars](https://img.shields.io/github/stars/gtbiomech/OpenMBD?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F26-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/gtbiomech/OpenMBD?style=flat)
+
 ### OpenFAST
 NLR (formerly NREL) aero-servo-elastic wind turbine dynamics (coupled CFD/structural loads workflows).
 
